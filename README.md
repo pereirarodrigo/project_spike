@@ -6,7 +6,7 @@ This project's goal is to simulate a spiking neural network and apply it to mach
 Main references used in this project are:
 
 * "BindsNET User Manual", at BindsNET's Read the Docs page. Available at: https://bindsnet-docs.readthedocs.io/guide.html;
-* "Neuronal Dynamics", by Wulfram Gerstner et al. at Neuronal Dynamics' web page. Available at: https://neuronaldynamics.epfl.ch/online/index.html;
+* "Neuronal Dynamics", by Wulfram Gerstner et al. (2014) at Neuronal Dynamics' web page. Available at: https://neuronaldynamics.epfl.ch/online/index.html;
 * "Deep Learning in Spiking Neural Networks", at ArXiv. Avaiable at: https://arxiv.org/pdf/1804.08150.pdf.
 
 
