@@ -7,8 +7,9 @@ Main references used in this project are:
 
 * "BindsNET User Manual", at BindsNET's Read the Docs page. Available at: https://bindsnet-docs.readthedocs.io/guide.html;
 * "Neuronal Dynamics", by Wulfram Gerstner et al. (2014) at Neuronal Dynamics' web page. Available at: https://neuronaldynamics.epfl.ch/online/index.html;
-* "Spike-timing dependent plasticity", at Scholarpedia. Available at: http://www.scholarpedia.org/article/Spike-timing_dependent_plasticity
-* "Deep Learning in Spiking Neural Networks" by Amirhossein Tavanaei et al. (2019), at ArXiv. Avaiable at: https://arxiv.org/pdf/1804.08150.pdf.
+* "Spike-timing dependent plasticity", at Scholarpedia. Available at: http://www.scholarpedia.org/article/Spike-timing_dependent_plasticity;
+* "Deep Learning in Spiking Neural Networks" by Amirhossein Tavanaei et al. (2019), at ArXiv. Avaiable at: https://arxiv.org/pdf/1804.08150.pdf;
+* "Improved robustness of reinforcement learning policies upon conversion to spiking neuronal network platforms applied to Atari Breakout game", by Devdhar Patel et al. (2019), at ArXiv. Available at: https://arxiv.org/pdf/1903.11012.pdf. 
 
 
 
