@@ -322,11 +322,12 @@ In this section, we'll use one of OpenAI Gym's environments, ```SpaceInvaders-v0
 #!pip install 'gym[atari]'
 
 import gym
+import time
 from bindsnet.pipeline import EnvironmentPipeline
 from bindsnet.encoding import bernoulli
 from bindsnet.learning import MSTDP
 from bindsnet.environment import GymEnvironment
-from bindsnet.pipeline.action import select_multinomial
+from bindsnet.pipeline.action import select_softmax
 
 # %matplotlib inline
 
@@ -424,7 +425,7 @@ pipeline = EnvironmentPipeline(
     plot_interval = 10,
     print_interval = 100,
     render_interval = 10,
-    action_function = select_multinomial,
+    action_function = select_softmax, #select_multinomial
     output = "R"
 )
 
@@ -441,8 +442,13 @@ def run_pipeline(pipeline, episode_count):
         is_done = False
         
         while not is_done:
+            # Defines how fast the game environment will be played
+            time.sleep(.02)
+
             result = pipeline.env_step()
-            pipeline.step(result)
+
+            # Offers additional information, but lags the simulation - use at your own risk!
+            # pipeline.step(result)
 
             reward = result[1]
             total_reward += reward
@@ -463,3 +469,8 @@ pipeline.network.learning = False
 print("Testing: ")
 
 run_pipeline(pipeline, episode_count = 100)
+
+""""##7. Conclusion
+***
+Spiking neural networks are a promising concept, albeit one that, as of now, can only be effectively used in a specialized environment, be it through a simulator or a neuromorphic chip. However, once SNNs make it past this development stage, there is a very high probability that this network model is going to heavily alter the field of machine learning and even artificial intelligence as a whole, possibly overtaking tasks that were once exclusive to other types of neural networks (such as deep Q-networks in reinforcement learning) and allowing us to gain greater insight into the question of artificial general intelligence.
+"""
